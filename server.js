@@ -39,6 +39,10 @@ app.post("/ask", async (req, res) => {
   }
 });
 
+app.get("/", (req, res) => {
+  res.send("🚀 A2Z AI Backend is running!");
+});
+
 app.listen(3000, () => {
   console.log("🚀 Server running on port 3000");
 });
